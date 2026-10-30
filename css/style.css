@@ -1,17 +1,11 @@
-:root {
-  --color-primary: #352044;     /* Color principal */
-  --color-accent: #a3e635;      /* Color Secundario */
-  --color-background: #17121c;  /* Fondos */
-  --color-text: #F3F4F6;        /* Textos */
-  --color-border: #403448;      /* Bordes */
+:root{
+  /* Derived from the brand palette in variables.css */
+  --paper:var(--color-background); --surface:color-mix(in srgb,var(--color-primary) 40%,var(--color-background)); --paper-2:var(--surface);
+  --ink:var(--color-text); --ink-2:color-mix(in srgb,var(--color-text) 72%,var(--color-background));
+  --accent:var(--color-accent); --accent-ink:#17121c;
+  --line:var(--color-border); --ok:#4ade80; --err:#ff8a80;
+  --font-sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --max:1120px; --radius:6px;
 }
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary: #352044;   /* Color principal */
-        --color-accent: #a2e635cc;  /* Color Secundario */
-        --color-background: #000;   /* Fondos */
-        --color-text: #F3F4F6;      /* Textos */
-        --color-border: #403448;    /* Bordes */
-    }
-}
+html{color-scheme:dark}
