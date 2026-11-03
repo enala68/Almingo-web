@@ -52,7 +52,7 @@ header {
   align-items: center;
   width: 100%;
   background-color: var(--primary-color);
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 3px solid var(--border-color);
 }
 
 header h1 {
@@ -64,7 +64,7 @@ header h1 {
 .resaltado {
   color: var(--accent-color);
 }
-
+/*
 nav ul {
   display: flex;
   flex-direction: row;
@@ -92,14 +92,15 @@ nav ul li a {
   color: var(--text-color);
   width: auto;
 }
+*/
 
 section {
   border-radius: 10px;
-  background-color: var(--primary-color);
   width: 70%;
   justify-self: center;
   padding-top: 72px;
   padding-bottom: 72px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -121,7 +122,30 @@ h3 {
 
 p {
   font-family: var(--font-sans);
-  color: var(--text-color);
+  color: #C7C7CB;
   font-size: 20px;
   line-height: 1.5;
 }
+
+#businesses {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 10px 20px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-weight: bold;
+}
+
+#individuals {
+  display: inline-block;
+  padding: 10px 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  border: 2px solid var(--border-color);
+} 
