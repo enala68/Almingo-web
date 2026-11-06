@@ -12,17 +12,15 @@
 
 <body>
     <header>
-        <h1 href="#">ALMIN<span class="resaltado">GO</span></h1>
-
+        <h1><a href="index.html">ALMIN<span class="resaltado">GO</span></a></h1>
 <nav>
     <details>
         <summary><img src="img/menu-icon.png" alt="Menu"></summary>
         <ul>
-            <li><a href="#" style="--chars:19">Home</a></li>
-            <br>
-            <li><a href="#" style="--chars:19">About</a></li>
-            <li><a href="#" style="--chars:19">Services</a></li>
-            <li><a href="#" style="--chars:19">Contact</a></li>
+            <li><a href="index.html" class="lineanimacion" style="--chars:19">Home</a></li>
+            <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
+            <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
+            <li><a href="contact.html" class="lineanimacion" style="--chars:19">Contact</a></li>
         </ul>
     </details>
 </nav>  
@@ -30,29 +28,29 @@
     </header>
     <main>
         <section class="hero">
-            <div class="section1">
             <div class="section-left">
             <h2>Software & app development</h2>
             <h3>We turn ideas into software that <span class="resaltado">lasts</span>.</h3>
             <p>ALMINGO designs and builds apps and custom software for individuals and businesses, with clear goals,
                 clean code and technology that makes sense for the people using it.</p>
             <div class="links">
-                <a href="businesses.html" id="businesses">For businesses</a>
-                <a href="individuals.html" id="individuals">For individuals</a>
+                    <button class="businesses"><a href="businesses.html">For businesses</a></button>
+                <button class="individuals"><a href="individuals.html" id="individuals">For individuals</a></button>
             </div>
             </div>
-            <div class="section-right">
-                <img class="light-mode" style="right: 200px; display: flex; position: absolute; top: 100px;" src="img/configuraciones.png" alt="Hero image">
-                <img class="dark-mode" style="right: 200px; display: flex; position: absolute; top: 100px;" src="img/configuraciones (2).png" alt="Hero image">
-            </div>
-        </div>
-        </section>
 
-        <section class="what-we-do">
+                <picture>
+                    <source srcset="img/configuraciones (2).png" media="(prefers-color-scheme: dark)">
+                    <img src="img/configuraciones.png" alt="Descripción de la imagen">
+                </picture>
+        </section>
+    </section>
+    <section class="what-we-do">
             <h2>What we do</h2>
-            <h3>Four areas of work</h3>
-            <div>
-                <article>
+            <h5>Four areas of work</h5>
+            <div class="card-group">
+                <div class="cards">
+                    <article>
                     <h3>Web & mobile apps</h3>
                     <p>Apps that work on every screen.</p>
                 </article>
@@ -60,6 +58,9 @@
                     <h3>Custom software</h3>
                     <p>Tools shaped around a specific workflow.</p>
                 </article>
+                </div>
+
+                <div class="cards">
                 <article>
                     <h3>Data & databases</h3>
                     <p>Information that is organised and reliable.</p>
@@ -68,6 +69,7 @@
                     <h3>Digital tools & automation</h3>
                     <p>Less repetitive work, fewer errors.</p>
                 </article>
+                </div>
             </div>
             <a href="#">Explore all solutions</a>
         </section>
@@ -103,8 +105,8 @@
         </section>
 
         <section>
-            <h2></h2>
-            <h3></h3>
+            <h2>Responsible development</h2>
+            <h3>Built with care</h3>
             <div>
                 <article>
                     <h3>Efficient</h3>
