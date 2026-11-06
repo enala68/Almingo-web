@@ -5,7 +5,7 @@
   /* Color Secundario */
   --bg-color: #17121c;
   /* Fondos */
-    --bg-secundary-color: #4f2e66;
+  --bg-secundary-color: #4f2e66;
   /* Fondo secundario */
   --text-color: #F3F4F6;
   /* Textos */
@@ -31,11 +31,6 @@
     --border-color: #403448;
     /* Bordes */
   }
-
-  img {
-
-  }
-
 }
 
 html {
@@ -46,10 +41,58 @@ html {
 
 
 body {
-	background: var(--bg-color);
-	color: var(--text-color);
-	margin: 0;
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
 }
+
+.resaltado {
+  color: var(--accent-color);
+}
+
+h2 {
+  font-size: clamp(13px, 1.1vw, 16px);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+h3 {
+  font-size: clamp(27px, 3.5vw, 34px);
+  font-family: var(--font-sans);
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: clamp(24px, 2.5vw, 29px);
+}
+
+h5 {
+  font-size: clamp(36px, 4vw, 48px);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: var(--font-sans);
+
+}
+
+h6 {
+  font-size: clamp(18px, 1.5vw, 20px);
+}
+
+p {
+  font-family: var(--font-sans);
+  color: #C7C7CB;
+  font-size: 20px;
+  line-height: 1.5;
+  width: auto;
+  text-align: justify;
+}
+
 
 header {
   z-index: 100;
@@ -70,6 +113,16 @@ header h1 {
   font-size: clamp(1.5rem, 2vw, 2rem);
 }
 
+header h1 a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+section {
+  align-content: center;
+  padding-left: 100px;
+  border-top: 1px solid var(--border-color);
+}
 
 /*
 nav ul {
@@ -100,6 +153,3 @@ nav ul li a {
   width: auto;
 }
 */
-
-
-
