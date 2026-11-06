@@ -1,149 +1,227 @@
-
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 70px;     /* Para que el header no tape los títulos con ID con 'a href' */
+h2 {
+    font-size: clamp(13px, 1.1vw, 16px);
 }
 
-body {
-  background: var(--bg-color);
-  color: var(--text-color);
-  margin: 0;
+h3 {
+    font-size: clamp(27px, 3.5vw, 34px);
 }
 
-/* ===== Header ===== */
-header {
-  display: flex;
-  flex-direction: row;
-  position: sticky;
-  justify-content: space-between;
-  top: 0;
-  align-items: center;
-  width: 100%;
-  background-color: var(--primary-color);
-  border-bottom: 3px solid var(--border-color);
+h4 {
+    font-size: clamp(24px, 2.5vw, 29px);
 }
 
-header h1 {
-  padding-left: 100px;
-  font-size: clamp(1.5rem, 2vw, 2rem);
+h5 {
+    font-size: clamp(36px, 4vw, 48px);
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-/* Simétrico al padding-left de 100px del h1 */
-header nav {
+h6 {
+    font-size: clamp(18px, 1.5vw, 20px);
+}
+.resaltado {
+  color: var(--accent-color);
+}
+
+section {
+	  align-content: center;
+	  padding-left: 100px;
+}
+section.hero {
+	display: flex;
+	flex-direction: row;
+	border-radius: 10px;
+	width: 85dvw;
+	padding-top: 150px;
+	padding-bottom: 72px;
+	margin-top: 5px;
+	margin-bottom: 100px;
+	background-color: var(--bg-color);
+}
+
+.hero h3  {
+  font-family: var(--font-sans);
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-size: clamp(22px, 3vw, 26px);
+}
+  
+section.what-we-do {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	justify-content: center;
+	align-content: center;
+	padding-top: 72px;
+	padding-bottom: 72px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: var(--bg-secundary-color);
+}
+
+.section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    margin-right: 200px;
+}
+
+.section-left h3 {
   padding-right: 100px;
 }
 
-/* ===== Menú horizontal antiguo (individuals.html) ===== */
-nav ul {
+picture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 200px;
+    position: absolute;
+    top: 120px;
+  }
+.links {
   display: flex;
   flex-direction: row;
-  padding-left: 0;
   align-items: center;
-  padding: 0 100px 0 0;
-  height: 70px;
-  width: 100%;
+  gap: 20px;
+  margin-top: 10px;
 }
 
-nav ul li {
-  list-style: none;
-  flex: 1;
-  text-align: center;
-  margin-left: 80px;
-  margin-right: 80px;
-  align-items: center;
-  justify-content: center;
-}
-
-nav ul li a {
-	text-decoration: none;
-	color: var(--text-color);
-	width: 350px;
-}
-
-/* ===== Menú desplegable (details / summary) ===== */
-nav details {
-  position: relative;
-}
-
-nav summary {
-  position: relative;
-  z-index: 2;                   /* por encima del panel, para poder cerrarlo */
-  list-style: none;
-  cursor: pointer;
-  color: var(--text-color);
-}
-
-/* Quita la flecha por defecto (necesario en Safari / iPad) */
-nav summary::-webkit-details-marker {
-  display: none;
-}
-
-nav summary img {
+h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
   display: block;
-  width: 32px;
-  height: 32px;
+  font-family: var(--font-mono);
+  font-weight: 600;
 }
 
-/* Panel a pantalla completa en vertical */
-nav details ul {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 1;
+h3 {
+	font-family: var(--font-sans);
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+p {
+	font-family: var(--font-sans);
+	color: #C7C7CB;
+	font-size: 20px;
+	line-height: 1.5;
+	width: 81%;
+	text-align: justify;
+}
+
+button {
+  padding: 0;
+}
+
+.businesses {
   display: flex;
-  flex-direction: column;
+  padding: 10px 20px;
+  margin-right: 0px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  width: 175px; 
+  height: 40px;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  width: clamp(260px, 40vw, 480px);
-  height: 100vh;
-  height: 100dvh;               /* ajusta el alto real en iPad y móvil */
-  margin: 0;
-  padding: 90px 0 2rem;         /* deja libre la zona del icono */
-  box-sizing: border-box;
-  overflow-y: auto;
-  background: var(--primary-color);
-  border: none;
-  border-left: 1px solid var(--border-color);
 }
 
-nav details ul li {
-  flex: none;
-  margin: 0;
-  padding: 1rem 2.5rem;
-  text-align: left;
+.individuals {
+  display: flex;
+  padding: 10px 20px;
+  margin-right: 0px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  width: 175px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
 }
 
-nav details ul li a {
-  display: inline-block;
-  white-space: nowrap;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+@media (prefers-color-scheme: dark) {
+  .businesses {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 0px;
+    background-color: #a2e635cc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-weight: bold;
+  }
 }
 
-/* Animación del panel: se descubre de derecha a izquierda (0.3s) */
-nav details[open] ul {
-  animation: slide-in 0.3s ease-out;
+.businesses:hover {
+  transition: all .1s ease-in-out;
+ 	box-shadow: inset 5px 5px 10px #4e4e4e88, inset -5px -5px 10px #e2e2e288;
 }
 
-/* Efecto typing en cada enlace: empieza tras 0.5s de delay */
-nav details[open] ul li a {
-	animation: typing 0.6s steps(var(--chars, 8)) 0.5s both;
-	border-bottom: 1px solid #73508aa3;
-	padding-bottom: 40px;
+.businesses a {
+  text-decoration: none;
+  color: var(--primary-color);
+  width: 175px;
+  font-size: 16px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-@keyframes slide-in {
-  from { clip-path: inset(0 0 0 100%); }
-  to   { clip-path: inset(0 0 0 0); }
+.businesses a:hover {
+  transition: all 0.1s ease-in-out;
+  font-size: 15px;  
 }
 
-@keyframes typing {
-  from { clip-path: inset(0 100% 0 0); }
-  to   { clip-path: inset(0 0 0 0); }
+.individuals:hover {
+  transition: all .1s ease-in-out;
+ 	box-shadow: inset 5px 5px 10px #4e4e4e88, inset -5px -5px 10px #4e4e4e88;
 }
 
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
+.individuals a {
+  text-decoration: none;
+  color: var(--accent-color);
+  width: 175px;
+  font-size: 15px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.individuals a:hover {
+  transition: all 0.1s ease-in-out;
+  font-size: 16px;  
+}
+
+
+/*------------ARTICLE------------- */
+
+.card-group {
+display: flex;
+flex-direction: column;
+align-items: space-evenly;
+justify-content: space-evenly;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: space-evenly;
 }

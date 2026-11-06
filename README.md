@@ -1,161 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+# 🌐 ALMINGO S.L. - Corporate Website
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/animaciones.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Almingo</title>
-</head>
+![Project Status](https://img.shields.io/badge/Status-Completed-success)
+![Language](https://img.shields.io/badge/Language-English-blue)
+![Course](https://img.shields.io/badge/DAM-1st%20Year%202026--2027-orange)
 
-<body>
-    <header>
-        <h1><a href="index.html">ALMIN<span class="resaltado">GO</span></a></h1>
-<nav>
-    <details>
-        <summary><img src="img/menu-icon.png" alt="Menu"></summary>
-        <ul>
-            <li><a href="index.html" class="lineanimacion" style="--chars:19">Home</a></li>
-            <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
-            <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
-            <li><a href="contact.html" class="lineanimacion" style="--chars:19">Contact</a></li>
-        </ul>
-    </details>
-</nav>  
+Official corporate web page for **ALMINGO S.L.**, developed as part of the expansion strategy for international markets[cite: 6]. This website outlines the company's IT solutions, sustainability policies, and core services[cite: 3, 6].
 
-    </header>
-    <main>
-        <section class="hero">
-            <div class="section-left">
-            <h2>Software & app development</h2>
-            <h3>We turn ideas into software that <span class="resaltado">lasts</span>.</h3>
-            <p>ALMINGO designs and builds apps and custom software for individuals and businesses, with clear goals,
-                clean code and technology that makes sense for the people using it.</p>
-            <div class="links">
-                    <button class="businesses"><a href="businesses.html">For businesses</a></button>
-                <button class="individuals"><a href="individuals.html" id="individuals">For individuals</a></button>
-            </div>
-            </div>
+---
 
-                <picture>
-                    <source srcset="img/configuraciones (2).png" media="(prefers-color-scheme: dark)">
-                    <img src="img/configuraciones.png" alt="Descripción de la imagen">
-                </picture>
-        </section>
-    </section>
-    <section class="what-we-do">
-            <h2>What we do</h2>
-            <h5>Four areas of work</h5>
-            <div class="card-group">
-                <div class="cards">
-                    <article>
-                    <h3>Web & mobile apps</h3>
-                    <p>Apps that work on every screen.</p>
-                </article>
-                <article>
-                    <h3>Custom software</h3>
-                    <p>Tools shaped around a specific workflow.</p>
-                </article>
-                </div>
+## 📌 Project Overview
 
-                <div class="cards">
-                <article>
-                    <h3>Data & databases</h3>
-                    <p>Information that is organised and reliable.</p>
-                </article>
-                <article>
-                    <h3>Digital tools & automation</h3>
-                    <p>Less repetitive work, fewer errors.</p>
-                </article>
-                </div>
-            </div>
-            <a href="#">Explore all solutions</a>
-        </section>
+ALMINGO S.L. undergoes a new management phase focused on modernization and international outreach[cite: 6]. This repository contains the source code for the landing page and official site written in **English**[cite: 2, 6], built to ensure usability, accessibility, and smooth graphical transitions.
 
-        <section>
-            <h2>Product concepts</h2>
-            <h3>Ideas we can build</h3>
-            <p>These are demonstration concepts, not finished client projects.</p>
-            <div>
-                <article>
-                    <h3>Routine Planner</h3>
-                    <p>A simple daily planner with reminders.</p>
-                    <p>Use: personal organisation</p>
-                </article>
-                <article>
-                    <h3>Inventory Tracker</h3>
-                    <p>Track stock levels and low-stock alerts.</p>
-                    <p>Use: small businesses</p>
-                </article>
-                <article>
-                    <h3>Study Companion</h3>
-                    <p>Quizzes and progress tracking for learners.</p>
-                    <p>Use: education</p>
-                </article>
-            </div>
-        </section>
+### Key Features
+* 🌍 **International Orientation:** Entire UI/UX and documentation created in English[cite: 2, 6].
+* 🎨 **Modern Design & Animation:** Interactive interface with fluid transitions and responsive layouts[cite: 2].
+* 👥 **Team Integration:** Built using Git workflow across multiple feature branches[cite: 2].
 
-        <section>
-            <h2>How we work</h2>
-            <h3>Listen. Design. Build. Improve.</h3>
-            <p>Every project follows a clear path, so you always know what is happening and what comes next.</p>
-            <a href="#">See our process</a>
-        </section>
+---
 
-        <section>
-            <h2>Responsible development</h2>
-            <h3>Built with care</h3>
-            <div>
-                <article>
-                    <h3>Efficient</h3>
-                    <p>Lightweight pages and code that avoids waste</p>
-                </article>
-                <article>
-                    <h3>Accessible</h3>
-                    <p>Keyboard-friendly and readable by default.</p>
-                </article>
-                <article>
-                    <h3>Maintainable</h3>
-                    <p>Organised, documented code that others can continue.</p>
-                </article>
-                <article>
-                    <h3>Private by design</h3>
-                    <p>We only ask for the data a project needs.</p>
-                </article>
-            </div>
-        </section>
+## 🛠️ Technologies Used
 
-        <section>
-            <h3>Have a project in mind?</h3>
-            <p>Tell us what you need. We will help you choose the right next step.</p>
-            <a href="#">Start a project</a>
-        </section>
+* **HTML5 & CSS3:** Semantic structure and custom animations/transitions[cite: 2, 5].
+* **JavaScript:** Frontend interactions and dynamic DOM updates.
+* **Git & GitHub:** Version control with feature branches and tags[cite: 2].
 
-        <section>
-            <article>
-                <h1>ALMINGO</h1>
-                <p>Software and apps for individuals and businesses.</p>
-            </article>
+---
 
-            <article>
-                <h4>EXPLORE</h4>
-                <a href="#">Solutions</a>
-                <a href="#">For Individuals</a>
-                <a href="#">For Businesses</a>
-            </article>
+## 📂 Repository Structure
 
-            <article>
-                <h4>COMPANY</h4>
-                <a href="#">About us</a>
-                <a href="#">Our Process</a>
-                <a href="#">Contact</a>
-            </article>
-
-            <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
-        </section>
-    </main>
-</body>
-
-</html>
+```text
+├── assets/
+│   ├── css/          # Stylesheets and keyframe animations
+│   ├── js/           # Interactive scripts
+│   └── images/       # Project logos and visual elements
+├── index.html        # Main landing page (English)
+├── about.html        # Company overview & sustainability vision
+└── README.md         # Project documentation
