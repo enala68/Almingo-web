@@ -1,0 +1,105 @@
+:root {
+  --primary-color: #352044;
+  /* Color principal */
+  --accent-color: #a3e635;
+  /* Color Secundario */
+  --bg-color: #17121c;
+  /* Fondos */
+    --bg-secundary-color: #4f2e66;
+  /* Fondo secundario */
+  --text-color: #F3F4F6;
+  /* Textos */
+  --border-color: #403448;
+  /* Bordes */
+}
+
+:root {
+  --font-sans: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-color: #352044;
+    /* Color principal */
+    --accent-color: #a2e635cc;
+    /* Color Secundario */
+    --bg-color: #000;
+    /* Fondos */
+    --text-color: #F3F4F6;
+    /* Textos */
+    --border-color: #403448;
+    /* Bordes */
+  }
+
+  img {
+
+  }
+
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+  /*Para que el header no tape los titulos con ID con 'a href'*/
+}
+
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+	margin: 0;
+}
+
+header {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-bottom: 3px solid var(--border-color);
+}
+
+header h1 {
+  font-family: var(--font-mono);
+  padding-left: 30px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+
+/*
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  align-items: center;
+  padding: 0 100px 0 0;
+  height: 40px;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-weight: 700;
+}
+
+nav ul li {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  width: auto;
+}
+*/
+
+
+
