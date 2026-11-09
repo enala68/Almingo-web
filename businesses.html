@@ -37,8 +37,10 @@
         </section>
 
         <section>
-            <h2>Services</h2>
-            <h5>What we offer</h5>
+            <div class="section-services">
+                <h2>Services</h2>
+                <h5>What we offer</h5>
+            </div>
             <div class="services">
                 <article class="service">
                     <h3>Custom software</h3>
@@ -62,15 +64,14 @@
             </div>
         </section>
 
-        <section class="problems"  >
+        <section class="problems">
             <article class="problem">
                 <h2>Problems we solve</h2>
                 <h3>Common challenges</h3>
                 <p><span class="resaltado">→</span> Information scattered across spreadsheets and emails</p>
                 <p><span class="resaltado">→</span> Manual processes that take too much time</p>
                 <p><span class="resaltado">→</span> Tools that do not fit how the team works</p>
-                <p><span class="resaltado">→</span> Data that is hard to search or report on
-                </p>
+                <p><span class="resaltado">→</span> Data that is hard to search or report on</p>
             </article>
 
             <article class="problem">
@@ -83,28 +84,29 @@
             </article>
         </section>
 
-        <section>
-            <h2>Start a project</h2>
-            <h3>Request a proposal</h3>
-            <p>Describe your project and the type of solution you need.</p>
+        <section class="formulario">
+            <div class="formulario-texto">
+                <h2>Start a project</h2>
+                <h3>Request a proposal</h3>
+                <p>Describe your project and the type of solution you need.</p>
+            </div>
             <form>
                 <h4>Request a project proposal</h4>
-                <hr>
-                <div>
-                    <label for="nombre">Company name *</label>
+                <div class="question">
+                    <label for="nombre">Company name <span class="resaltado">*</span></label>
                     <div>
                         <input type="text" id="name" name="name">
                     </div>
                 </div>
 
-                <div>
-                    <label for="mail">Work email *</label>
+                <div class="question">
+                    <label for="mail">Work email <span class="resaltado">*</span></label>
                     <input type="email" id="mail" name="mail">
                 </div>
 
-                <div>
-                    <label for="tipo">Type of solution *</label>
-                    <select d="tipo" name="tipo">
+                <div class="question">
+                    <label for="tipo">Type of solution <span class="resaltado">*</span></label>
+                    <select id="tipo" name="tipo">
                         <option value="">Choose an option</option>
                         <option>Custom software</option>
                         <option>Web or mobile app</option>
@@ -114,7 +116,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="question">
                     <label for="tipo">Company size</label>
                     <select d="tipo" name="tipo">
                         <option value="">Choose an option</option>
@@ -125,8 +127,8 @@
                     </select>
                 </div>
 
-                <div>
-                    <label for="idea">Describe your idea *</label>
+                <div class="question">
+                    <label for="idea">Project description <span class="resaltado">*</span></label>
                     <textarea id="idea" name="idea"></textarea>
                 </div>
 
@@ -135,26 +137,28 @@
             </form>
         </section>
 
-        <section>
-            <article>
-                <h1>ALMINGO</h1>
+        <section class="informative-section">
+            <article class="informative-article">
+                <h1>ALMIN<span class="resaltado">GO</span></h1>
                 <p>Software and apps for individuals and businesses.</p>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>EXPLORE</h4>
-                <a href="#">Solutions</a>
-                <a href="#">For Individuals</a>
-                <a href="#">For Businesses</a>
+                <a href="services.html">Services</a>
+                <a href="individuals.html">For Individuals</a>
+                <a href="businesses.html">For Businesses</a>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>COMPANY</h4>
-                <a href="#">About us</a>
-                <a href="#">Our Process</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About us</a>
+                <a href="">Our Process</a>
+                <a href="contact.html">Contact</a>
             </article>
+        </section>
 
+        <section class="copy">
             <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
         </section>
 
