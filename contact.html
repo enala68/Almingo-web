@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Almingo</title>
 </head>
 
@@ -18,55 +18,46 @@
             <details>
                 <summary><img src="img/menu-icon.png" alt="Menu"></summary>
                 <ul>
-                    <li><a href="index.html" style="--chars:19">Home</a></li>
+                    <li><a href="index.html" class="lineanimacion" style="--chars:19">Home</a></li>
                     <br>
-                    <li><a href="about.html" style="--chars:19">About</a></li>
-                    <li><a href="services.html" style="--chars:19">Services</a></li>
-                    <li><a href="contact.html" style="--chars:19">Contact</a></li>
+                    <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
+                    <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
+                    <li><a href="contact.html" class="lineanimacion" style="--chars:19">Contact</a></li>
                 </ul>
             </details>
         </nav>
 
     </header>
     <main>
-        <section>
-            <h2>Contact</h2>
-            <h3>Let’s talk.</h3>
-            <p>Choose the path that fits you, or send us a general message.</p>
-        </section>
 
-        <section>
-            <h2>Start a project</h2>
-            <h3>Request a proposal</h3>
-            <p>Describe your project and the type of solution you need.</p>
+        <div class="contact">
+
+        <section class="contact-left">
             <form>
-                <h4>Request a project proposal</h4>
-                <hr>
-                <div>
-                    <label for="nombre">Name *</label>
+                <h4>START PROJECT</h4>
+                <div class="name-lname">
                     <div>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="text" id="LastName" name="LastName" placeholder="Last Name">
+                    </div>
+                </div>
+
+                    <input type="email" id="mail" name="mail" placeholder="Email">
+
+                <div>
+                    <div>
+                        <label for="Client_Type">Who Are You?</label>
+                    </div>
+                    <div class="cli-type">
+                        <input type="checkbox" name="business" id="business">
+                        <input type="checkbox" name="individual" id="individual">
                     </div>
                 </div>
 
                 <div>
-                    <label for="mail">Email *</label>
-                    <input type="email" id="mail" name="mail">
-                </div>
-
-                <div>
-                    <label for="tipo">I am writing as *</label>
-                    <select d="tipo" name="tipo">
-                        <option value="">Choose an option</option>
-                        <option>Individual</option>
-                        <option>Business</option>
-                        <option>Other</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="idea">Describe your idea *</label>
-                    <textarea id="idea" name="idea"></textarea>
+                    <textarea id="idea" name="idea" placeholder="Describe your idea...  "></textarea>
                 </div>
 
                 <input type="submit" id="enviar" value="Send message" class="boton_enviar">
@@ -74,7 +65,13 @@
             </form>
         </section>
 
+        <section class="contact-right">
+            <img src="" alt="">
+        </section>
+        </div>
+</main>
 
+<footer>
         <section class="informative-section">
             <article class="informative-article">
                 <h1>ALMIN<span class="resaltado">GO</span></h1>
@@ -99,8 +96,8 @@
         <section class="copy">
             <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
         </section>
-
-    </main>
+    </footer>
+    
 </body>
 
 </html>
