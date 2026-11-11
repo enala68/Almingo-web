@@ -1,0 +1,252 @@
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;     /* Para que el header no tape los títulos con ID con 'a href' */
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-bottom: 3px solid var(--border-color);
+}
+
+header h1 {
+  padding-left: 100px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+/* Simétrico al padding-left de 100px del h1 */
+header nav {
+  padding-right: 100px;
+}
+
+/* ===== Menú horizontal antiguo (individuals.html) ===== */
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  align-items: center;
+  padding: 0 100px 0 0;
+  height: 70px;
+  width: 100%;
+}
+
+nav ul li {
+  list-style: none;
+  flex: 1;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: var(--text-color);
+	width: 350px; 
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* ===== Menú desplegable (details / summary) ===== */
+nav details {
+  position: relative;
+}
+
+nav summary {
+  position: relative;
+  z-index: 2;                   /* por encima del panel, para poder cerrarlo */
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+/* Quita la flecha por defecto (necesario en Safari / iPad) */
+nav summary::-webkit-details-marker {
+  display: none;
+}
+
+nav summary img {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+/* Panel a pantalla completa en vertical */
+nav details ul {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: clamp(260px, 40vw, 480px);
+  height: 100vh;
+  height: 100dvh;               /* ajusta el alto real en iPad y móvil */
+  margin: 0;
+  padding: 90px 0 2rem;         /* deja libre la zona del icono */
+  box-sizing: border-box;
+  overflow-y: auto;
+  background: var(--primary-color);
+  border: none; 
+  border-left: 1px solid var(--border-color);
+}
+
+nav details ul li {
+  flex: none;
+  margin: 0;
+  padding: 1rem 2.5rem;
+  text-align: left;
+}
+
+nav details ul li a {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+/* Animación del panel: se descubre de derecha a izquierda (0.3s) */
+nav details[open] ul {
+  animation: slide-in 0.3s ease-out;
+}
+
+/* Efecto typing en cada enlace: empieza tras 0.5s de delay */
+nav details[open] ul li a {
+	animation: typing 0.6s steps(var(--chars, 8)) 0.5s both;
+	border-bottom: 1px solid #73508aa3;
+	padding-bottom: 40px;
+}
+
+@keyframes slide-in {
+  from { clip-path: inset(0 0 0 100%); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes typing {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+
+/*---------LINEA INFERIOR DE IZQUIERDA A DERECHA----------- */
+
+.lineanimacion{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.lineanimacion:after {
+content: '';
+height: 1px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--accent-color);
+transition: width .3s linear;
+}
+
+.lineanimacion:hover::after{
+    width: 100%;
+}
+
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenar{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+  
+  }
+
+.rellenar {
+    transition: color 0.3s ease-in-out;
+}
+
+.rellenar:hover {
+    color: var(--accent-color);
+}
+
+.rellenar:after {
+  content: '';
+  height: 200px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color);
+  transition: width .3s linear;
+}
+
+.rellenar:hover::after{
+  width: 100%;
+}
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenarararriba {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+    /*CAMBIAR COLOR DEL a en cta right en estado hover*/
+}
+
+.rellenarararriba:hover {
+    color: var(--accent-color);
+}
+
+.rellenarararriba::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--bg-secundary-color);
+    transition: height 0.3s ease-in-out;
+    border-radius: 28px 28px 0 0;
+    transition: .3s;
+  border-color: transparent;
+  }
+
+.rellenarararriba:hover::after {
+    height: 100%;
+    border-radius: 18px 18px 0 0;
+    transition: .3s;
+}
+
