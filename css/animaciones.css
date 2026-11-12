@@ -58,7 +58,12 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: var(--text-color);
-	width: 350px;
+	width: 350px; 
+  transition: .3s;
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
 }
 
 /* ===== Menú desplegable (details / summary) ===== */
@@ -103,7 +108,7 @@ nav details ul {
   box-sizing: border-box;
   overflow-y: auto;
   background: var(--primary-color);
-  border: none;
+  border: none; 
   border-left: 1px solid var(--border-color);
 }
 
@@ -147,3 +152,101 @@ nav details[open] ul li a {
   50% { transform: translateY(-5px); }
   100% { transform: translateY(0); }
 }
+
+
+/*---------LINEA INFERIOR DE IZQUIERDA A DERECHA----------- */
+
+.lineanimacion{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.lineanimacion:after {
+content: '';
+height: 1px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--accent-color);
+transition: width .3s linear;
+}
+
+.lineanimacion:hover::after{
+    width: 100%;
+}
+
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenar{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+  
+  }
+
+.rellenar {
+    transition: color 0.3s ease-in-out;
+}
+
+.rellenar:hover {
+    color: var(--accent-color);
+}
+
+.rellenar:after {
+  content: '';
+  height: 200px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color);
+  transition: width .3s linear;
+}
+
+.rellenar:hover::after{
+  width: 100%;
+}
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenarararriba {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+    /*CAMBIAR COLOR DEL a en cta right en estado hover*/
+}
+
+.rellenarararriba:hover {
+    color: var(--accent-color);
+}
+
+.rellenarararriba::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--bg-secundary-color);
+    transition: height 0.3s ease-in-out;
+    border-radius: 28px 28px 0 0;
+    transition: .3s;
+  border-color: transparent;
+  }
+
+.rellenarararriba:hover::after {
+    height: 100%;
+    border-radius: 18px 18px 0 0;
+    transition: .3s;
+}
+

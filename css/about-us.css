@@ -1,0 +1,96 @@
+section.hero {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding-left: 100px;
+    width: 85dvw;
+    padding-top: 72px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+    background-color: var(--bg-color);
+}
+
+.work-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: auto;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: var(--bg-color);
+    border-top: 4px solid var(--border-color);
+}
+
+.approach {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: justify;
+    width: 650px;
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.quality {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 650px;
+    align-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.quality p {
+    border-bottom: 4px solid var(--border-color);
+    padding-bottom: 6px;
+    margin-top: 0;
+    transition: .3s;
+}
+
+.quality p:hover {
+border-color: var(--accent-color);
+}
+
+.section-principles {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 30px;
+    border-top: 3px solid var(--border-color);
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+}
+
+.principles-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+}
+
+.principles-content article {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--border-color);
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.principles-content article:hover {
+	border-top: 4px solid var(--accent-color);
+}
