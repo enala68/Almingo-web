@@ -58,10 +58,15 @@ nav ul li {
 nav ul li a {
 	text-decoration: none;
 	color: var(--text-color);
-	width: 350px;
+	width: 350px; 
+  transition: .3s;
 }
 
-/* ===== Menú desplegable (details / summary) ===== */
+nav ul li a:hover {
+  color: var(--accent-color);
+}
+
+/* ------ Menú desplegable (details / summary) ------ */
 nav details {
   position: relative;
 }
@@ -72,11 +77,6 @@ nav summary {
   list-style: none;
   cursor: pointer;
   color: var(--text-color);
-}
-
-/* Quita la flecha por defecto (necesario en Safari / iPad) */
-nav summary::-webkit-details-marker {
-  display: none;
 }
 
 nav summary img {
@@ -97,13 +97,12 @@ nav details ul {
   align-items: flex-start;
   width: clamp(260px, 40vw, 480px);
   height: 100vh;
-  height: 100dvh;               /* ajusta el alto real en iPad y móvil */
+  height: 100dvh;
   margin: 0;
-  padding: 90px 0 2rem;         /* deja libre la zona del icono */
+  padding: 90px 0 2rem;
   box-sizing: border-box;
-  overflow-y: auto;
   background: var(--primary-color);
-  border: none;
+  border: none; 
   border-left: 1px solid var(--border-color);
 }
 
@@ -115,22 +114,24 @@ nav details ul li {
 }
 
 nav details ul li a {
-  display: inline-block;
+  display: table-cell;
   white-space: nowrap;
   font-size: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-/* Animación del panel: se descubre de derecha a izquierda (0.3s) */
 nav details[open] ul {
   animation: slide-in 0.3s ease-out;
 }
 
-/* Efecto typing en cada enlace: empieza tras 0.5s de delay */
+
 nav details[open] ul li a {
-	animation: typing 0.6s steps(var(--chars, 8)) 0.5s both;
+  animation: typing 2s steps(100) 0.5s both;
 	border-bottom: 1px solid #73508aa3;
 	padding-bottom: 40px;
+  font-family: 'Space Mono', monospace;
+  font-size: 3rem;
 }
+
 
 @keyframes slide-in {
   from { clip-path: inset(0 0 0 100%); }
@@ -138,8 +139,24 @@ nav details[open] ul li a {
 }
 
 @keyframes typing {
-  from { clip-path: inset(0 100% 0 0); }
-  to   { clip-path: inset(0 0 0 0); }
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100ch;
+  }
+}
+
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 10px #d9ffa1;
+  }
+    50% {
+      box-shadow: 0 0 10px transparent;
+  }
+  100% {
+      box-shadow: 0 0 10px #d9ffa1;
+  }
 }
 
 @keyframes float {
@@ -147,3 +164,101 @@ nav details[open] ul li a {
   50% { transform: translateY(-5px); }
   100% { transform: translateY(0); }
 }
+
+
+/*---------LINEA INFERIOR DE IZQUIERDA A DERECHA----------- */
+
+.lineanimacion{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+.lineanimacion:after {
+content: '';
+height: 1px;
+width: 0%;
+position: absolute;
+bottom: 0;
+left: 0;
+background: var(--accent-color);
+transition: width .3s linear;
+}
+
+.lineanimacion:hover::after{
+    width: 100%;
+}
+
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenar{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+  
+  }
+
+.rellenar {
+    transition: color 0.3s ease-in-out;
+}
+
+.rellenar:hover {
+    color: var(--accent-color);
+}
+
+.rellenar:after {
+  content: '';
+  height: 200px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: var(--accent-color);
+  transition: width .3s ease;
+}
+
+.rellenar:hover::after{
+  width: 100%;
+}
+
+/*--------- RELLENAR DE IZQUIERDA A DERECHA----------- */
+
+.rellenarararriba {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+
+    /*CAMBIAR COLOR DEL a en cta right en estado hover*/
+}
+
+.rellenarararriba:hover {
+    color: var(--accent-color);
+}
+
+.rellenarararriba::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--bg-secundary-color);
+    transition: height 0.3s ease-in-out;
+    border-radius: 28px 28px 0 0;
+    transition: .3s;
+  border-color: transparent;
+  }
+
+.rellenarararriba:hover::after {
+    height: 100%;
+    border-radius: 18px 18px 0 0;
+    transition: .3s;
+}
+

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
     <title>Almingo</title>
 </head>
 
@@ -18,87 +18,86 @@
             <details>
                 <summary><img src="img/menu-icon.png" alt="Menu"></summary>
                 <ul>
-                    <li><a href="index.html" style="--chars:19">Home</a></li>
+                    <li><a href="index.html" class="lineanimacion" style="--chars:19">Home</a></li>
                     <br>
-                    <li><a href="about.html" style="--chars:19">About</a></li>
-                    <li><a href="services.html" style="--chars:19">Services</a></li>
-                    <li><a href="contact.html" style="--chars:19">Contact</a></li>
+                    <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
+                    <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
+                    <li><a href="contact.html" class="lineanimacion" style="color: var(--accent-color);">Contact</a></li>
                 </ul>
             </details>
         </nav>
 
     </header>
     <main>
-        <section>
-            <h2>Contact</h2>
-            <h3>Let’s talk.</h3>
-            <p>Choose the path that fits you, or send us a general message.</p>
-        </section>
 
-        <section>
-            <h2>Start a project</h2>
-            <h3>Request a proposal</h3>
-            <p>Describe your project and the type of solution you need.</p>
-            <form>
-                <h4>Request a project proposal</h4>
-                <hr>
-                <div>
-                    <label for="nombre">Name *</label>
-                    <div>
-                        <input type="text" id="name" name="name">
+        <div class="contact">
+
+            <section class="contact-left">
+                <form class="contact-form">
+                    <h2 class="contact-title">START PROJECT</h2>
+
+                    <div class="contact-row">
+                        <input type="text" id="name" name="name" placeholder="Name" autocomplete="given-name">
+
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name" autocomplete="family-name">
                     </div>
-                </div>
 
-                <div>
-                    <label for="mail">Email *</label>
-                    <input type="email" id="mail" name="mail">
-                </div>
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="email">
 
-                <div>
-                    <label for="tipo">I am writing as *</label>
-                    <select d="tipo" name="tipo">
-                        <option value="">Choose an option</option>
-                        <option>Individual</option>
-                        <option>Business</option>
-                        <option>Other</option>
-                    </select>
-                </div>
+                    <div class="contact-type">
+                        <legend>Who Are You?</legend>
+                        <div class="contact-type-options">
+                            <label class="contact-option">
+                                <input type="radio" name="client-type" value="business">
+                                <span>Business</span>
+                            </label>
+                            <label class="contact-option">
+                                <input type="radio" name="client-type" value="individual">
+                                <span>Individual</span>
+                            </label>
+                        </div>
+                    </div>
 
-                <div>
-                    <label for="idea">Describe your idea *</label>
-                    <textarea id="idea" name="idea"></textarea>
-                </div>
+                    <textarea class="textarea" id="idea" name="idea" placeholder="Describe your idea..."></textarea>
 
-                <input type="submit" id="enviar" value="Send message" class="boton_enviar">
+                    <button type="button" class="contact-button">CONTACT</button>
+                </form>
+            </section>
 
-            </form>
-        </section>
+            <section class="contact-right">
+                <img src="img/Ilustración 3D de contacto en tonos púrpura y lima.png" alt="3D illustration of a phone with an envelope, call and location icons">
+            </section>
 
+        </div>
+</main>
 
-        <section>
-            <article>
-                <h1>ALMINGO</h1>
+<footer>
+        <section class="informative-section">
+            <article class="informative-article">
+                <h1>ALMIN<span class="resaltado">GO</span></h1>
                 <p>Software and apps for individuals and businesses.</p>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>EXPLORE</h4>
-                <a href="#">Solutions</a>
-                <a href="#">For Individuals</a>
-                <a href="#">For Businesses</a>
+                <a href="services.html">Services</a>
+                <a href="individuals.html">For Individuals</a>
+                <a href="businesses.html">For Businesses</a>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>COMPANY</h4>
-                <a href="#">About us</a>
-                <a href="#">Our Process</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About us</a>
+                <a href="">Our Process</a>
+                <a href="contact.html">Contact</a>
             </article>
-
-            <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
         </section>
 
-    </main>
+        <section class="copy">
+            <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
+        </section>
+    </footer>
+    
 </body>
 
 </html>

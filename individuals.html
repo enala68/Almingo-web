@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/animaciones.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/individuals.css">
     <title>Almingo</title>
 </head>
 
@@ -21,14 +21,14 @@
                     <li><a href="index.html" class="lineanimacion" style="--chars:19">Home</a></li>
                     <li><a href="about.html" class="lineanimacion" style="--chars:19">About</a></li>
                     <li><a href="services.html" class="lineanimacion" style="--chars:19">Services</a></li>
-                    <li><a href="contact.html" class="lineanimacion" style="--chars:19">Contact</a></li>
+                    <li><a href="contact.html" class="lineanimacion" style="color: var(--accent-color);">Contact</a></li>
                 </ul>
             </details>
         </nav>
 
     </header>
     <main>
-        <section>
+        <section class="hero">
             <h2>For Individuals</h2>
             <h3>Your idea, turned into an app.</h3>
             <p>Have a routine you wish was easier or a personal project you want to see working? ALMINGO helps turn
@@ -36,49 +36,52 @@
         </section>
 
         <section>
-            <h2>EXAMPLES</h2>
-            <h3>Apps for everyday needs</h3>
-            <div>
-                <article>
+            <div class="section-examples">
+                <h2>EXAMPLES</h2>
+                <h3>Apps for everyday needs</h3>
+            </div>
+            <div class="examples">
+                <article class="example">
                     <h3>Habit tracker</h3>
                     <p>Build routines and see your progress.</p>
-                    <p>Use: personal growth</p>
+                    <p><b>Use:</b> personal growth</p>
                 </article>
-                <article>
+                <article class="example">
                     <h3>Hobby collection manager</h3>
                     <p>Catalogue and search what you collect.</p>
-                    <p>Use: hobbies</p>
+                    <p><b>Use:</b> hobbies</p>
                 </article>
-                <article>
+                <article class="example">
                     <h3>Learning planner</h3>
                     <p>Plan study sessions and check goals.</p>
-                    <p>Use: students</p>
+                    <p><b>Use:</b> students</p>
                 </article>
             </div>
         </section>
 
-        <section>
-            <h2>Get started</h2>
-            <h3>Tell us your idea</h3>
-            <p>A few details are enough to begin the conversation.</p>
+        <section class="formulario">
+            <div class="formulario-texto">
+                <h2>Get started</h2>
+                <h3>Tell us your idea</h3>
+                <p>A few details are enough to begin the conversation.</p>
+            </div>
             <form>
                 <h4>Request an app idea</h4>
-                <hr>
-                <div>
-                    <label for="nombre">Your name *</label>
+                <div class="question">
+                    <label for="nombre">Your name</label>
                     <div>
-                        <input type="text" id="name" name="name">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
                     </div>
                 </div>
 
-                <div>
-                    <label for="mail">Email *</label>
-                    <input type="email" id="mail" name="mail">
+                <div class="question">
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" name="mail" placeholder="Email">
                 </div>
 
-                <div>
-                    <label for="tipo">What kind of app do you have in mind? *</label>
-                    <select d="tipo" name="tipo">
+                <div class="question">
+                    <label for="tipo">What kind of app do you have in mind?</label>
+                    <select id="tipo" name="tipo">
                         <option value="">Choose an option</option>
                         <option>Personal organisation</option>
                         <option>Learning or hobby</option>
@@ -87,9 +90,9 @@
                     </select>
                 </div>
 
-                <div>
-                    <label for="idea">Describe your idea *</label>
-                    <textarea id="idea" name="idea"></textarea>
+                <div class="question">
+                    <label for="idea">Describe your idea</label>
+                    <textarea id="idea" name="idea" placeholder="Short Description"></textarea>
                 </div>
 
                 <input type="submit" id="enviar" value="Send request" class="boton_enviar">
@@ -97,26 +100,28 @@
             </form>
         </section>
 
-        <section>
-            <article>
-                <h1>ALMINGO</h1>
+        <section class="informative-section">
+            <article class="informative-article">
+                <h1>ALMIN<span class="resaltado">GO</span></h1>
                 <p>Software and apps for individuals and businesses.</p>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>EXPLORE</h4>
-                <a href="#">Solutions</a>
-                <a href="#">For Individuals</a>
-                <a href="#">For Businesses</a>
+                <a href="services.html">Services</a>
+                <a href="individuals.html">For Individuals</a>
+                <a href="businesses.html">For Businesses</a>
             </article>
 
-            <article>
+            <article class="informative-article">
                 <h4>COMPANY</h4>
-                <a href="#">About us</a>
-                <a href="#">Our Process</a>
-                <a href="#">Contact</a>
+                <a href="about.html">About us</a>
+                <a href="">Our Process</a>
+                <a href="contact.html">Contact</a>
             </article>
+        </section>
 
+        <section class="copy">
             <p>© 2026 ALMINGO S.L. Academic project, Reto 1 Almingo.</p>
         </section>
     </main>
